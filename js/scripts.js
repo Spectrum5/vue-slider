@@ -30,7 +30,7 @@ createApp  ({
             
         }
     },
-    
+
     methods: {
                 prevImage(){
                     if(this.active === 0 ){
@@ -48,5 +48,10 @@ createApp  ({
                         this.active++;
                     }
                 },
+
+                clickImage(index){
+                    this.active = index;
+                },
     }
+    
 }).mount('#app')
