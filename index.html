@@ -24,7 +24,7 @@
     <div id="app">
 
         <div class="container">
-            <div class="slider-wrapper" tabindex="0">
+            <div class="slider-wrapper" tabindex="0" v-on:mouseover="stopPlay" v-on:mouseleave="play" >
 
                 <div v-for = "( slide, index ) in slides" class="item" v-show="index == active">
                     <img :src="slide.image" alt="slide.title">
