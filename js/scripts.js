@@ -52,6 +52,10 @@ createApp  ({
                 clickImage(index){
                     this.active = index;
                 },
-    }
+            },
+            
+    mounted(){
+        let play = setInterval(this.nextImage,3000);
+    },
     
 }).mount('#app')
